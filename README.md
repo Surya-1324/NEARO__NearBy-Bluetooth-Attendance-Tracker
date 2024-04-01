@@ -1,3 +1,5 @@
+![Picture13](https://github.com/suryasanjay321/NEARO__NearBy-Bluetooth-Attendance-Tracker/assets/116817102/90df7b8e-2016-46ee-a101-7a6eace27b14)
+
 # NEARO__NearBy-Bluetooth-Attendance-Tracker
 **Real-Time Attendance System:** Track attendance accurately with biometric integration, real-time tracking, and admin controls. Ideal for educational institutes, industries, and conferences. Prevents time theft.
 **Attendance Management System with Real-Time Tracking and Biometric Integration**
