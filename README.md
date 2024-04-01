@@ -31,3 +31,6 @@ The attendance management system described here provides a comprehensive solutio
 - MNCs: Provides a reliable solution for managing attendance across multiple branches and locations.
 - Hospitals: Enables precise monitoring of staff presence within designated areas for enhanced security and workflow management.
 - Meeting Conferences: Streamlines attendance tracking for events and conferences, enhancing organizational efficiency.
+
+![Picture12](https://github.com/suryasanjay321/NEARO__NearBy-Bluetooth-Attendance-Tracker/assets/116817102/e290e3f4-7ee7-4a37-b848-436ee3634027)
+
