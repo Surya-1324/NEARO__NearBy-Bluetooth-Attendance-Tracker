@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "737969088046",
+    "project_id": "nearo-8d5f0",
+    "storage_bucket": "nearo-8d5f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737969088046:android:f6860f81d7099bcefae1bf",
+        "android_client_info": {
+          "package_name": "com.example.nearbybluetooth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737969088046-9lhp0chvaum5bol4105jtbp13k1iousa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTLyb8rhP3BipApgVr33LtIi2s0NxIObo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737969088046-9lhp0chvaum5bol4105jtbp13k1iousa.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "737969088046-4b64j7lie0v3615p9iepjsjvf5sqppu0.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.nearo.nearo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,54 @@
+Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+              child: ElevatedButton(
+                  onPressed: () {
+                    starttime = d.gettime();
+                    startdate = d.getdate();
+                    discover();
+                    advertise("admin");
+
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(SnackBar(content: Text("Searching")));
+                  },
+                  child: Text("search"))),
+          ElevatedButton(
+              onPressed: () {
+                int a = d.gethoursfromtime(starttime, d.gettime());
+
+                FirebaseFirestore.instance
+                    .collection("workingdays")
+                    .doc(startdate + starttime)
+                    .set({
+                  'date': startdate,
+                  'starttime': starttime,
+                  'endtime': d.gettime(),
+                  'total': a.toString()
+                });
+
+                Nearby().stopDiscovery();
+                Nearby().stopAdvertising();
+
+                setState(() {
+                  endpointmap.clear();
+                });
+
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                    content: Text("All the records saved successfully")));
+              },
+              child: Text("stop discovering")),
+          Expanded(
+            child: ListView.builder(
+                itemCount: endpointmap.length,
+                itemBuilder: (context, index) {
+                  return Card(
+                    child: ListTile(
+                      title: Text("${endpointmap[index]['name']}"),
+                      subtitle: Text("In Time : ${endpointmap[index]['in']}"),
+                    ),
+                  );
+                }),
+          ),
+        ],
+      ),
